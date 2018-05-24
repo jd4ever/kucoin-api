@@ -642,6 +642,14 @@ class Kucoin {
     return this.doSignedRequest('get', '/' + params.pair + '/deal-orders', params)
   }
 
+
+
+  getMyTrades(params = {}) {
+    return this.doSignedRequest('get', '/order/dealt')
+  }
+
+
+
   /**
    * Retrieve current price ticker data for the specified trading pair.
    * @access public
